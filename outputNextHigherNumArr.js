@@ -35,3 +35,4 @@ function outputNextHigherNumArr(arr){
  *  testcase
 **/
 console.log(outputNextHigherNumArr([40,50,11,32,55,68,75]));
+
