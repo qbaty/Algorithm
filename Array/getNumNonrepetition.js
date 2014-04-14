@@ -10,6 +10,7 @@ function getNumNonrepetition(arr){
 	var end = arr.length;
 	for(var i = 0; i < arr.length; i++){
 		if(arr[i] in index){
+			
 			index[arr[i]].push(i);
 		}else{
 			index[arr[i]] = [i];

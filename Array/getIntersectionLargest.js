@@ -3,10 +3,10 @@
  * try to find out the kth greatest common factor
  * var arrA = [1, 3, 6, 12, 24, 34, 88, 102]
  * var arrB = [2, 6, 2, 4, 24, 45, 88, 123]
- * getCommonFactor(arrA, arrB, n);
+ * getIntersectionLargest(arrA, arrB, n);
 **/
-function getCommonFactor(arrA, arrB, n){
-	var c = -1, i = 0;
+function getIntersectionLargest(arrA, arrB, n){
+	var c = 0, i = 0;
 	var temp;
 	arrA.sort(function(a,b){return b-a});
 	arrB.sort(function(a,b){return b-a});
