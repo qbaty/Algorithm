@@ -1,8 +1,14 @@
 /**
- * 
+ * Write a function for get all letter collection
+ * Given ['adc', 'cda', 'anc', 'cn', 'acn']
+ * Result :
+ * {
+ *    'adc' : ['adc', cda],
+ *	  'anc' : ['anc', 'acn'],
+ *    'cn'  : ['cn']
+ * }
  **/
- 
-function sortStringArr(arr){
+function getSameLetterStr(arr){
 	var i = 0;
 	var map = {};
 	for(i; i<arr.length; i++){
