@@ -4,7 +4,7 @@
  * Result :
  * {
  *    'adc' : ['adc', cda],
- *	  'anc' : ['anc', 'acn'],
+ *    'anc' : ['anc', 'acn'],
  *    'cn'  : ['cn']
  * }
  **/
