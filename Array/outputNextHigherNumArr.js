@@ -6,7 +6,6 @@
  * for element if no higher element is present, print -1. 
  * complexity should be less than O(n^2) . 
  * you can use datastructure and no constraint on space complexity.
- *
 **/
 
 function outputNextHigherNumArr(arr){
