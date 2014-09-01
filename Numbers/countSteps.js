@@ -12,7 +12,6 @@
 
 function countSteps(n){
 	var counts = 0;
-	var results = [];
 	function partition(arr, last ,m){
 		var tempArr;
 		if(m > 1){
@@ -39,6 +38,7 @@ function countSteps(n){
 		}
 	}
 	partition([], null, n);
+	results.push([n]);
 	console.log(results.length, results);
 	return counts;
 }
