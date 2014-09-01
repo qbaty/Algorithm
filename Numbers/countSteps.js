@@ -12,36 +12,33 @@
 
 function countSteps(n){
 	var counts = 0;
+	var results = [];
 	function partition(arr, last ,m){
 		var tempArr;
 		if(m > 1){
 			for(var i = last || 1; i <= m/2; i++){
 				tempArr = arr.slice(0);
-				if(m-i > i){
+				if(m - i >= i){
 					tempArr.push(i);
 					
-					if(m-i > 1){
-						partition(tempArr.slice(0), i, m-i);
+					if(m - i > 1){
+						partition(tempArr.slice(0), i, m - i);
 					}
 
-					tempArr.push(m-i);
-				}else if(m-i == i){
-					tempArr.push(i);
-					tempArr.push(m-i);
-				}else{
+					tempArr.push(m - i);
+					results.push(tempArr);
+				} else {
 					return
 				}
 			}
 		}else{
 			tempArr = arr.slice(0);
 			tempArr.push(m);
-		}
 
-		if(tempArr){
-			counts += 1;
-			console.log(tempArr);	
+			results.push(tempArr);
 		}
 	}
 	partition([], null, n);
+	console.log(results.length, results);
 	return counts;
 }
