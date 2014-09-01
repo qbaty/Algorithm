@@ -28,7 +28,7 @@ function countSteps(n){
 					tempArr.push(m - i);
 					results.push(tempArr);
 				} else {
-					return
+					return;
 				}
 			}
 		}else{
