@@ -22,7 +22,7 @@ function puddle(arr){
 				max_l = idx_l;
 			}else{
 				if(arr[max_r] >= arr[max_l]){
-					sum = sum + (arr[max_l] - arr[idx_l]);
+					sum += (arr[max_l] - arr[idx_l]);
 				}
 			}
 		}else{
@@ -31,7 +31,7 @@ function puddle(arr){
 				max_r = idx_r;
 			}else{
 				if(arr[max_l] >= arr[max_r]){
-					sum = sum + (arr[max_r] - arr[idx_r]);
+					sum += (arr[max_r] - arr[idx_r]);
 				}
 			}
 		}
