@@ -17,7 +17,7 @@ function puddle(arr){
 
 	while(idx_l < idx_r){
 		if(arr[idx_l] < arr[idx_r]){
-			idx_l = idx_l + 1;
+			idx_l++;
 			if(arr[idx_l] >= arr[max_l]){
 				max_l = idx_l;
 			}else{
@@ -26,7 +26,7 @@ function puddle(arr){
 				}
 			}
 		}else{
-			idx_r = idx_r - 1;
+			idx_r--;
 			if(arr[idx_r] >= arr[max_r]){
 				max_r = idx_r;
 			}else{
