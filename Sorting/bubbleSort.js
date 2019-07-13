@@ -9,7 +9,7 @@
 function bubbleSort(arr){
    var len = arr.length;
    for(var i = 0;i<len-1;i++ ){
-       for(var j = 0;j < len-1;j++){
+       for(var j = 0;j < len-1-j;j++){
            var temp;
            if(arr[j] > arr[j+1]) {
                temp = arr[j];
